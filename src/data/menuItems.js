@@ -13,47 +13,47 @@ import shutDownIcon from "../assets/images/icons/shut-down-small-icon.png";
 
 const menuItems = [
   {
-    id: generateId(),
+    id: 'windows-update',
     name: "Windows Update",
     imgURL: windowsUpdateIcon
     },
   {
-    id: generateId(),
+    id: 'programs',
     name: "Programs",
     imgURL: programsIcon
   },
   {
-    id: generateId(),
+    id: 'favorites',
     name: "Favorites",
     imgURL: favoritesIcon
   },
   {
-    id: generateId(),
+    id: 'documents',
     name: "Documents",
     imgURL: documentsIcon
   },
   {
-    id: generateId(),
+    id: 'settings',
     name: "Settings",
     imgURL: settingsIcon
   },
   {
-    id: generateId(),
+    id: 'find',
     name: "Find",
     imgURL: findIcon
   },
   {
-    id: generateId(),
+    id: 'help',
     name: "Help",
     imgURL: helpIcon
   },
   {
-    id: generateId(),
+    id: 'log-off',
     name: "Log Off",
     imgURL: logOffIcon
   },
   {
-    id: generateId(),
+    id: 'shut-down',
     name: "Shut Down",
     imgURL: shutDownIcon
   }

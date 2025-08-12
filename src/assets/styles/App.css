@@ -5,9 +5,8 @@
   text-align: center;
 }
 /* GLOBAL */
-
-#start-menu button:active {
-  transform: translateY(2px);
+.dropdown-menu:not(.show) {
+  display: none !important;
 }
 
 
@@ -33,65 +32,37 @@
   width: 70px;
   margin-top: 5px;
 }
+
 /* FOOTER BAR */
+#footer-bar .navbar.window {
+  height: 30px;
+  padding: 0%;
+}
 
 #footer-start-btn {
   font-size: 11px;
   padding-left: 5px;
 }
 
-
-.footer-bar-divider {
-  width: 4px;
-  height: 23px;
-  box-shadow: inset -1px -1px #565656, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
-  /* border-radius: 1px; */
+#footer-start-btn:active {
+  transform: translateY(1px);
 }
 
-.start-menu-item-divider {
-  border-top: 1px solid grey;
-  border-bottom: 1px solid white;
-  width: 150px;
+#footer-start-btn.pressed {
+  border: 1px solid #ccc;
+  border-top-color: #000;
+  border-left-color: #000;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+
+  background-color: #dfdfdf;
+  box-shadow: inset 1px 1px 2px grey;
+  top: 0;
 }
 
-#footer-bar .custom-window {
-  height: 30px;
-  padding: 0%;
-}
-
-#end-of-footer-box {
-  box-shadow: inset -1px -1px #fff, inset 1px 1px rgb(166, 166, 166), inset -2px -2px #dfdfdf, inset 2px 2px grey;
-  padding: 1px 15px;
-}
-
-/* #end-of-footer-box .dropup {
-  width: 20px;
-} */
-
-.dropdown-menu.window { 
+#start-menu .window { 
   border-radius: 0%;
   gap: 5px
-}
-
-.dropdown-menu.window:not(.show) {
-  display: none !important;
-}
-
-#timer {
-  min-width: 60px;
-}
-
-#footer-volume-btn {
-    background: none !important;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    box-sizing: none;
-    color: none;
-    min-height: none;
-    min-width: 20px;
-    padding: none;   
-    text-shadow: none;
 }
 
 .title-bar.inactive {
@@ -102,19 +73,103 @@
   font-weight: 200;
   font-size: medium;
   color: white;
-  width: 25px; 
+  width: 20px; 
 }
-
 
 .dropdown-menu .windows-text {
   color: lightgray;
   font-weight: 900;
 }
 
-#end-of-footer-box .dropdown-menu {
-  width: 30px;
+.start-menu-item-divider {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid white;
+  width: 150px;
 }
+
+.footer-bar-divider {
+  width: 4px;
+  height: 23px;
+  box-shadow: inset -1px -1px #565656, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+  /* border-radius: 1px; */
+}
+
+
+
+/* END OF FOOTER BOX */
+#end-of-footer-box {
+  box-shadow: inset -1px -1px #fff, inset 1px 1px rgb(166, 166, 166), inset -2px -2px #dfdfdf, inset 2px 2px grey;
+  padding: 1px 15px;
+}
+
+#end-of-footer-box .dropdown-menu {
+  min-width: 0%;
+  width: 6rem;
+  height: 10rem;
+}
+
+
+#footer-volume-btn {
+  background: none !important;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: none;
+  color: none;
+  min-height: none;
+  min-width: 20px;
+  padding: none;   
+  text-shadow: none;
+}
+
+.volume-triangle {
+  /* position: absolute; */
+  width: 30px;
+  height: 90px;
  
+/* clip-path: polygon(
+  0% 0%, 0% 10%, 3.125% 10%,
+  3.125% 20%, 6.25% 20%,
+  6.25% 30%, 9.375% 30%,
+  9.375% 40%, 12.5% 40%,
+  12.5% 50%, 15.625% 50%,
+  15.625% 60%, 18.75% 60%,
+  18.75% 70%, 21.875% 70%,
+  21.875% 80%, 25% 80%,
+  25% 90%, 28.125% 90%,
+  28.125% 100%, 50% 100%, 50% 0%
+); */
+
+clip-path: polygon(
+                0% 0%, 0% 10%, 4.6875% 10%,
+                4.6875% 20%, 9.375% 20%,
+                9.375% 30%, 14.0625% 30%,
+                14.0625% 40%, 18.75% 40%,
+                18.75% 50%, 23.4375% 50%,
+                23.4375% 60%, 28.125% 60%,
+                28.125% 70%, 32.8125% 70%,
+                32.8125% 80%, 37.5% 80%,
+                37.5% 90%, 42.1875% 90%,
+                42.1875% 100%, 50% 100%, 50% 0%
+            );
+box-shadow: inset -1px -1px #565656, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+background-color: #ccc;
+
+  /* clip-path: polygon(100% 100%, 100% 0%, 0% 0%);
+  background-color: gray; */
+}
+
+.is-vertical>input[type=range].volume-slider {
+  width: 100px;
+}
+.dropdown-menu .is-vertical {
+  height: 100px;
+}
+
+#timer {
+  min-width: 60px;
+}
+
 /* MENU ITEMS */
 #start-menu .dropdown-item {
   height: 20px;
