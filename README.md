@@ -50,7 +50,7 @@ Work in progress - more projects and updates coming soon!
 
 [![Latest Release](https://img.shields.io/github/v/release/aranu29/portfolio-website?style=for-the-badge)](../../releases/latest)
 
-**Current Version:** [v1.2.0](../../releases/tag/v1.2.0) - Added new projects section
+**Current Version:** [v1.0.0](../../releases/tag/v1.2.0) - Beginnings of website
 
 [📋 View All Releases](../../releases) | [🔔 Watch for Updates](../../subscription)
 
