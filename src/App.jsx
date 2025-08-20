@@ -11,11 +11,11 @@ import DraggableWindow from './components/DraggableWindow';
 import windowMapConfig from '../src/data/windowConfig';
 import desktopIcons from '../src/data/desktopIcons';
 
-// Custom Window Manager Hook
+// custom window manager hook
 const useWindowManager = () => {
   const [windows, setWindows] = useState(new Map()); 
   const [activeWindow, setActiveWindow] = useState(null);
-  const [nextZIndex, setNextZIndex] = useState(1000); // Track next z-index value
+  const [nextZIndex, setNextZIndex] = useState(1000); // tracks next z-index value
 
   const openWindow = (windowId) => {
     const newZIndex = nextZIndex;
@@ -28,7 +28,7 @@ const useWindowManager = () => {
       return newWindows;
     });
     setActiveWindow(windowId);
-    setNextZIndex(prev => prev + 10); // Ensure significant gap between z-indexes
+    setNextZIndex(prev => prev + 10); // ensures significant gap between z-indexes
   };
 
   const closeWindow = (windowId) => {
@@ -139,12 +139,12 @@ function App() {
   
   const windowMap = windowMapConfig;
 
-  // Get window info for taskbar
+  // gets window info for taskbar
   const getWindowInfo = (windowId) => {
     return windowMap[windowId];
   };
 
-  // Handle taskbar window clicks
+  // handles taskbar window clicks
   const handleTaskbarWindowClick = (windowId) => {
     if (isMinimized(windowId)) {
       restoreWindow(windowId);
@@ -155,7 +155,7 @@ function App() {
     }
   };
 
-  // Window renderer
+  // window renderer
   const renderWindow = (windowId) => {
     const windowProps = windowMap[windowId];
     if (!windowProps) return null;
