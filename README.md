@@ -30,9 +30,9 @@
 
 ## About The Project
 
-This project is my take on the “Recipes” assignment from The Odin Project’s Foundations Course. It showcases a simple multi-page website built using HTML and CSS, featuring a collection of my favorite recipes. The goal of the project was to reinforce core web development concepts such as semantic HTML structure and hyperlinking between pages while having fun with food content. I added some styling with CSS.
+My ongoing digital playground - a collection of personal software projects where creativity meets code. Dive into experimental apps, fun tools, and creative solutions built with curiosity and passion for programming.
 
-Each recipe page highlights a unique dish, complete with a description, ingredient list, and step-by-step instructions. This project served as a hands-on introduction to web development fundamentals and version control using Git.
+Work in progress - more projects and updates coming soon!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -46,9 +46,13 @@ Each recipe page highlights a unique dish, complete with a description, ingredie
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### 🚀 Live Demo
+### 🚀 Latest Version
 
-[View Live Site](https://aranu29.github.io/portfolio-website)
+[![Latest Release](https://img.shields.io/github/v/release/aranu29/portfolio-website?style=for-the-badge)](../../releases/latest)
+
+**Current Version:** [v1.2.0](../../releases/tag/v1.2.0) - Added new projects section
+
+[📋 View All Releases](../../releases) | [🔔 Watch for Updates](../../subscription)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,8 +150,8 @@ See the [open issues](https://github.com/aranu29/odin-recipes/issues) for a full
 ## 🙏 Acknowledgments
 
 - [React Documentation](https://reactjs.org/)
-- [Bootstrap CSS](https://bootstrap.com/)
-- [98.css](https://98.css/) for windows 98 styling
+- [Bootstrap CSS](https://getbootstrap.com/)
+- [98.css](https://jdan.github.io/98.css/#intro) for windows 98 styling
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,6 +179,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [CSS]: https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff
 [CSS-url]: https://html.com
 [BOOTSTRAP]: https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff
-[BOOTSTRAP-url]: https://getbootstrap.com/docs/5.3/getting-started/introduction/
-[JAVASCRIPT]: https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
+[BOOTSTRAP-url]: https://getbootstrap.com/
+[JAVASCRIPT]: https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000
 [JAVASCRIPT-url]: https://www.javascript.com/
