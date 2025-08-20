@@ -7,7 +7,9 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['fsevents']
   },
+  base: '/portfolio-website/',
   build: {
+    outDir: 'dist',
     rollupOptions: {
       external: ['fsevents']
     }

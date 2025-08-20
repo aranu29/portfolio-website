@@ -1,13 +1,16 @@
 {
   "name": "my-portfolio-react-app",
-  "private": true,
+  "homepage": "https://aranu29.github.io/portfolio-website/",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "98.css": "^0.1.21",
