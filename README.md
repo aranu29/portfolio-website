@@ -32,8 +32,6 @@
 
 Welcome to my ongoing digital playground - a collection of personal software projects where creativity meets code. Dive into experimental apps, fun tools, and creative solutions built with curiosity and passion for programming.
 
-Work in progress - more projects and updates coming soon!
-
 ### 🚀 Latest Version
 [![Latest Release](https://img.shields.io/github/v/release/aranu29/portfolio-website?style=for-the-badge)](../../releases/latest)
 
