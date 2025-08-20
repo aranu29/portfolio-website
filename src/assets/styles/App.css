@@ -1,0 +1,127 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/* GLOBAL */
+
+#start-menu button:active {
+  transform: translateY(2px);
+}
+
+
+/* CURSOR */
+.desktop-icon,
+.dropdown-item,
+#footer-start-btn,
+#footer-ie,
+#footer-messenger,
+#footer-cd-player,
+#footer-volume-btn {
+  cursor: url("../images/win98-pointer.png"), pointer;
+}
+
+/* DESKTOP ICONS */
+#desktop-icons {
+  top: 10px;
+  left: 10px;
+  /* z-index: 1000; */
+}
+
+.desktop-icon p {
+  width: 70px;
+  margin-top: 5px;
+}
+/* FOOTER BAR */
+
+#footer-start-btn {
+  font-size: 11px;
+  padding-left: 5px;
+}
+
+
+.footer-bar-divider {
+  width: 4px;
+  height: 23px;
+  box-shadow: inset -1px -1px #565656, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+  /* border-radius: 1px; */
+}
+
+.start-menu-item-divider {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid white;
+  width: 150px;
+}
+
+#footer-bar .custom-window {
+  height: 30px;
+  padding: 0%;
+}
+
+#end-of-footer-box {
+  box-shadow: inset -1px -1px #fff, inset 1px 1px rgb(166, 166, 166), inset -2px -2px #dfdfdf, inset 2px 2px grey;
+  padding: 1px 15px;
+}
+
+/* #end-of-footer-box .dropup {
+  width: 20px;
+} */
+
+.dropdown-menu.window { 
+  border-radius: 0%;
+  gap: 5px
+}
+
+.dropdown-menu.window:not(.show) {
+  display: none !important;
+}
+
+#timer {
+  min-width: 60px;
+}
+
+#footer-volume-btn {
+    background: none !important;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    box-sizing: none;
+    color: none;
+    min-height: none;
+    min-width: 20px;
+    padding: none;   
+    text-shadow: none;
+}
+
+.title-bar.inactive {
+  writing-mode: vertical-rl;
+  text-orientation: mixed; 
+  transform: rotate(180deg);
+  white-space: nowrap;
+  font-weight: 200;
+  font-size: medium;
+  color: white;
+  width: 25px; 
+}
+
+
+.dropdown-menu .windows-text {
+  color: lightgray;
+  font-weight: 900;
+}
+
+#end-of-footer-box .dropdown-menu {
+  width: 30px;
+}
+ 
+/* MENU ITEMS */
+#start-menu .dropdown-item {
+  height: 20px;
+  /* margin-bottom: 2px; */
+  /* text-align: center; */
+}
+
+
+
+
