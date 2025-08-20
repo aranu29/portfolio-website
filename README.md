@@ -30,11 +30,15 @@
 
 ## About The Project
 
-My ongoing digital playground - a collection of personal software projects where creativity meets code. Dive into experimental apps, fun tools, and creative solutions built with curiosity and passion for programming.
+Welcome to my ongoing digital playground - a collection of personal software projects where creativity meets code. Dive into experimental apps, fun tools, and creative solutions built with curiosity and passion for programming.
 
 Work in progress - more projects and updates coming soon!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### 🚀 Latest Version
+Access the website below!
+[![Latest Release](https://img.shields.io/github/v/release/aranu29/portfolio-website?style=for-the-badge)](../../releases/latest)
+
+[📋 View All Releases](../../releases) | [🔔 Watch for Updates](../../subscription)
 
 ### 🛠️ Built With
 
@@ -44,15 +48,7 @@ Work in progress - more projects and updates coming soon!
 - [![JAVASCRIPT][JAVASCRIPT]][JAVASCRIPT-url]
 - [Windows 98 CSS](https://jdan.github.io/98.css/#intro)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### 🚀 Latest Version
-
-[![Latest Release](https://img.shields.io/github/v/release/aranu29/portfolio-website?style=for-the-badge)](../../releases/latest)
-
-[📋 View All Releases](../../releases) | [🔔 Watch for Updates](../../subscription)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">⬆️ Back to top</a>)</p>
 
 ## 🏃‍♂️ Getting Started
 
@@ -110,13 +106,13 @@ portfolio-website/
 
 Coming Soon
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">⬆️ Back to top</a>)</p>
 
 ## Roadmap
 
 See the [open issues](https://github.com/aranu29/odin-recipes/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">⬆️ Back to top</a>)</p>
 
 ## 🤝 Contributing
 
@@ -136,28 +132,28 @@ See the [open issues](https://github.com/aranu29/odin-recipes/issues) for a full
   <img src="https://contrib.rocks/image?repo=aranu29/portfolio-website" alt="contrib.rocks image" />
 </a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">⬆️ Back to top</a>)</p>
 
 ## 📧 Contact
 
 - [![GitHub][github-shield]][github-url]
 - [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">⬆️ Back to top</a>)</p>
 
 ## 🙏 Acknowledgments
 
 - [React Documentation](https://reactjs.org/)
 - [Bootstrap CSS](https://getbootstrap.com/)
-- [98.css](https://jdan.github.io/98.css/#intro) for windows 98 styling
+- [98.css](https://jdan.github.io/98.css/#intro)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">⬆️ Back to top</a>)</p>
 
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">⬆️ Back to top</a>)</p>
 
 ---
 
