@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import  { useState } from "react";
-import { v4 as uuidv4 } from 'uuid';
 import MenuItem from "./MenuItem";
 
 // data
@@ -14,21 +13,28 @@ import volumeIcon from "../assets/images/icons/volume-small-icon.png";
 import cdPlayerIcon from "../assets/images/icons/cd-player-small-icon.png";
 
 // FOOTER BAR JUST HAS THE BUTTONS LOGIC
-function FooterBar({onPageOpen, currentTime}) {
+function FooterBar(props) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div id="footer-bar">
-      <nav className="navbar window custom-window fixed-bottom navbar-expand-lg"> {/* container */}
+      <nav className="navbar window fixed-bottom navbar-expand-lg"> {/* container */}
         <div className="container-fluid d-flex justify-content-start position-absolute p-1"> {/* row */}
           {/* START MENU - ANCHOR BUTTON */}
           <div id="start-menu">
             <ul className="navbar-nav">
               <li className="nav-item dropup">
                 <button id="footer-start-btn"
-                  className="d-flex justify-content-center align-items-center gap-2 me-1"  
+                  onClick={toggleMenu}
+                  className={`d-flex justify-content-center align-items-center gap-2 me-1 ${isMenuOpen && 'pressed'}`}
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                    <img src={startMenuIcon} alt="start-menu-icon" className="d-inline-block justify-content-center"/>
+                    <img src={startMenuIcon} alt="start-menu-icon" />
                     <b>Start</b>
                 </button>
                 <ul className="dropdown-menu window d-flex gap-0">
@@ -41,12 +47,12 @@ function FooterBar({onPageOpen, currentTime}) {
                         <MenuItem
                           name={item.name}
                           imgURL={item.imgURL}
-                          onPageOpen={onPageOpen}
+                          onPageOpen={props.onPageOpen}
                         />
                         
                         {/* Add divider after specific items */}
                         {(index === 0 || index === 6) && (
-                          <div className="start-menu-item-divider ">                      </div>
+                          <div className="start-menu-item-divider "></div>
                         )}
                       </Fragment>
                     ))}    
@@ -66,7 +72,7 @@ function FooterBar({onPageOpen, currentTime}) {
                 <img 
                 src={internetExplorerIcon}
                 alt="ie-icon" 
-                onClick={() => onPageOpen('internet-explorer')}
+                onClick={() => props.onPageOpen('internet-explorer')}
                 id="footer-ie"
                 className=""/>
             </li>
@@ -74,7 +80,7 @@ function FooterBar({onPageOpen, currentTime}) {
                 <img 
                 src={messengerIcon}
                 alt="messenger-icon" 
-                onClick={() => onPageOpen('messenger')}
+                onClick={() => props.onPageOpen('messenger')}
                 id="footer-messenger"
                 width={18}
                 className="pb-1"/>
@@ -83,7 +89,7 @@ function FooterBar({onPageOpen, currentTime}) {
                 <img 
                 src={cdPlayerIcon}
                 alt="cd-player-icon" 
-                onClick={() => onPageOpen('messenger')}
+                onClick={() => props.onPageOpen('cd-player')}
                 id="footer-cd-player"
                 width={18}
                 className=""/>
@@ -94,12 +100,46 @@ function FooterBar({onPageOpen, currentTime}) {
           </ul>
 
           {/* Where the draggable windows will show up */}
-          <ul id="draggable-windows-box" className="navbar-nav d-flex flex-row justify-content-center align-items-center flex-grow-1">
+          {/* Window buttons */}
+          <div className="d-flex gap-2 flex-grow-1">
+            {Array.from(props.windows.keys()).map(windowId => {
+              const windowInfo = props.getWindowInfo(windowId);
+              const isActive = props.activeWindow === windowId;
+              const isMinimized = props.windows.get(windowId)?.isMinimized;
+              
+              return (
+                <button
+                  key={windowId}
+                  onClick={() => props.onWindowClick(windowId)}
+                  className={`btn btn-sm d-flex align-items-center gap-2 ${
+                    isActive && !isMinimized ? 'btn-light' : 'btn-outline-light'
+                  } ${isMinimized ? 'opacity-75' : ''}`}
+                  style={{ 
+                    maxWidth: '200px',
+                    minWidth: '120px'
+                  }}
+                >
+                  <span className="text-truncate">{windowInfo?.title || windowId}</span>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      props.onWindowClose(windowId);
+                    }}
+                    className="btn btn-sm p-0 ms-1"
+                    style={{ width: '16px', height: '16px', fontSize: '10px' }}
+                  >
+                    x
+                  </button>
+                </button>
+              );
+            })}
+          </div>
+          {/* <ul id="draggable-windows-box" className="navbar-nav d-flex flex-row justify-content-center align-items-center flex-grow-1">
             <li className="nav-item">
 
             </li>
 
-          </ul>
+          </ul> */}
 
           {/* THE ICON BUTTONS AT END OF WINDOW */}
           <ul id="end-of-footer-box" className="navbar-nav d-flex flex-row justify-content-center align-items-center gap-2 ms-auto">            
@@ -115,19 +155,29 @@ function FooterBar({onPageOpen, currentTime}) {
                   width={18}
                   className=""/>
               </button>
-              <ul className="dropdown-menu pt-0">
-                {/* <div class="field-row"> */}
-                  {/* <label htmlFor="range25"></label> */}
+              <ul className="dropdown-menu window d-flex flex-column align-items-center" onClick={(e) => e.stopPropagation()}>
+                <p className="mb-0 ms-2">Volume</p>
+                <div className="volume-triangle-slider d-flex flex-row justify-content-center align-items-center me-3">
+                  <div className="volume-triangle mt-3"></div>
                   <div className="is-vertical">
-                    {/* <label htmlFor="range23">Low</label> */}
-                    <input id="range23" className="has-box-indicator" type="range" min="1" max="11" value="5" />
-                    {/* <label htmlFor="range25">High</label> */}
+                    <input
+                      id="range23"
+                      className="has-box-indicator volume-slider m-0"
+                      type="range"
+                      min="1"
+                      max="11"
+                      defaultValue="5"
+                    />
                   </div>
-                {/* </div> */}
+                </div>
+                <div className="mute-btn pt-2 ms-1" onClick={(e) => e.stopPropagation()}>
+                  <input type="checkbox" id="mute-checkbox"/>
+                  <label htmlFor="mute-checkbox"><u>M</u>ute</label>
+                </div>
               </ul>
             </li>
             <li id="timer" className="nav-item">
-              <span>{currentTime.toLocaleTimeString()}</span>
+              <span>{props.currentTime.toLocaleTimeString()}</span>
             </li>
           </ul>
           </div>

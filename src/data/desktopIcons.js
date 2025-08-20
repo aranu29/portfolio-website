@@ -1,4 +1,3 @@
-import { generateId } from "../utils/index";
 import myComputerIcon from "../assets/images/icons/my-computer-icon.png";
 import ieIcon from "../assets/images/icons/ie-icon.png";
 import recycleBinIcon from "../assets/images/icons/recycle_bin_empty-icon.png";
@@ -8,33 +7,33 @@ import cdPLayerIcon from "../assets/images/icons/cd-audio-icon.png";
 
 const desktopIcons = [
   {
-    id: generateId(),
-    name: "My Computer",
+    id: 'my-computer',
+    label: "My Computer",
     imgURL: myComputerIcon
     },
   {
-    id: generateId(),
-    name: "Internet Explorer",
+    id:'internet-explorer',
+    label: "Internet Explorer",
     imgURL: ieIcon
   },
   {
-    id: generateId(),
-    name: "Recycle Bin",
+    id: 'recycle-bin',
+    label: "Recycle Bin",
     imgURL: recycleBinIcon
   },
   {
-    id: generateId(),
-    name: "Messenger",
+    id:'messenger',
+    label: "Messenger",
     imgURL: messengerIcon
   },
   {
-    id: generateId(),
-    name: "Documents",
+    id: 'documents',
+    label: "Documents",
     imgURL: documentsIcon
   },
   {
-    id: generateId(),
-    name: "CD Player",
+    id: 'cd-player',
+    label: "CD Player",
     imgURL: cdPLayerIcon
   }
 

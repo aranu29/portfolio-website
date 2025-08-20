@@ -1,64 +1,79 @@
-# React + Vite
+<a id="readme-top"></a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- TABLE OF CONTENTS -->
+<details>
+    <summary>Table of Contents</summary>
+    <ol>
+        <li>
+            <a href="#about-the-project">About The Project</a>
+            <ul>
+                <li><a href="#built-with">Built With</a></li>
+                <li><a href="#live-demo">Live Demo</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#getting-started">Getting Started</a>
+            <ul>
+                <li><a href="#prerequisites">Prerequisites</a></li>
+                <li><a href="#installation">Installation</a></li>
+            </ul>
+        </li>
+        <li><a href="#project-structure">Project Structure</a></li>
+        <li><a href="#customization">Customization</a></li>
+        <li><a href="#Roadmap">Roadmap</a></li>
+        <li><a href="#contributing">Contributing</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#acknowledgments">Acknowledgments</a></li>
+        <li><a href="#license">License</a></li>
+    </ol>
+</details>
 
-Currently, two official plugins are available:
+## About The Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+My ongoing digital playground - a collection of personal software projects where creativity meets code. Dive into experimental apps, fun tools, and creative solutions built with curiosity and passion for programming.
 
-## Expanding the ESLint configuration
+Work in progress - more projects and updates coming soon!
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Portfolio Website
+### 🛠️ Built With
 
-A responsive portfolio website showcasing my work as a web developer. Built with clean design principles and optimized for performance across all devices.
+- [![HTML][HTML]][HTML-url]
+- [![CSS][CSS]][CSS-url]
+- [![BOOTSTRAP][BOOTSTRAP]][BOOTSTRAP-url]
+- [![JAVASCRIPT][JAVASCRIPT]][JAVASCRIPT-url]
+- [Windows 98 CSS](https://jdan.github.io/98.css/#intro)
 
-## 🚀 Live Demo
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[View Live Site](https://yourname.github.io/portfolio-website)
+### 🚀 Latest Version
 
-## 📸 Screenshots
+[![Latest Release](https://img.shields.io/github/v/release/aranu29/portfolio-website?style=for-the-badge)](../../releases/latest)
 
-![Homepage](./screenshots/homepage.png)
-![Projects Section](./screenshots/projects.png)
-![Contact Page](./screenshots/contact.png)
+**Current Version:** [v1.2.0](../../releases/tag/v1.2.0) - Added new projects section
 
-## 🛠️ Built With
+[📋 View All Releases](../../releases) | [🔔 Watch for Updates](../../subscription)
 
-- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
-- **Framework:** React.js
-- **Styling:** Tailwind CSS / Styled Components
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
-- **Deployment:** GitHub Pages / Netlify / Vercel
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ✨ Features
-
-- **Responsive Design** - Works perfectly on desktop, tablet, and mobile
-- **Dark/Light Mode** - Toggle between themes
-- **Smooth Animations** - Engaging micro-interactions
-- **Project Showcase** - Interactive project cards with live demos
-- **Contact Form** - Functional contact form with email integration
-- **SEO Optimized** - Meta tags and structured data
-- **Fast Loading** - Optimized images and code splitting
-
-## 🏃‍♂️ Quick Start
+## 🏃‍♂️ Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
+
+- Node.js (v24 or higher)
 - npm or yarn
 
 ### Installation
 
 1. Clone the repository
+
 ```bash
 git clone https://github.com/yourusername/portfolio-website.git
 cd portfolio-website
 ```
 
 2. Install dependencies
+
 ```bash
 npm install
 # or
@@ -66,6 +81,7 @@ yarn install
 ```
 
 3. Start the development server
+
 ```bash
 npm start
 # or
@@ -79,71 +95,30 @@ yarn start
 ```
 portfolio-website/
 ├── public/
-│   ├── index.html
-│   └── favicon.ico
 ├── src/
-│   ├── components/
-│   │   ├── Header/
-│   │   ├── Hero/
-│   │   ├── Projects/
-│   │   ├── About/
-│   │   └── Contact/
+|   |── __tests__/
 │   ├── assets/
-│   │   ├── images/
-│   │   └── icons/
-│   ├── styles/
+│   ├── components/
+│   ├── data/
 │   ├── utils/
-│   └── App.js
-├── screenshots/
+│   ├── App.jsx
+│   └── index.jsx
 └── README.md
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🎨 Customization
 
-### Colors
-Update the color palette in `src/styles/globals.css`:
-```css
-:root {
-  --primary-color: #3b82f6;
-  --secondary-color: #1e40af;
-  --accent-color: #f59e0b;
-}
-```
+Coming Soon
 
-### Content
-- Edit personal information in `src/data/profile.js`
-- Update project data in `src/data/projects.js`
-- Modify skills and experience in `src/data/skills.js`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Images
-- Add your profile photo to `src/assets/images/profile.jpg`
-- Update project screenshots in `src/assets/images/projects/`
+## Roadmap
 
-## 🚀 Deployment
+See the [open issues](https://github.com/aranu29/odin-recipes/issues) for a full list of proposed features (and known issues).
 
-### GitHub Pages
-1. Update `homepage` in `package.json`:
-```json
-"homepage": "https://yourusername.github.io/portfolio-website"
-```
-
-2. Deploy:
-```bash
-npm run deploy
-```
-
-### Netlify
-1. Connect your GitHub repository to Netlify
-2. Set build command: `npm run build`
-3. Set publish directory: `dist` or `build`
-
-### Vercel
-1. Connect your GitHub repository to Vercel
-2. Deploy automatically on every push to main branch
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing
 
@@ -153,27 +128,57 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+### 🐛 Issues & New Features
+
+[Report Bug](../../issues/new?template=bug_report.md) | [Request Feature](../../issues/new?template=feature_request.md)
+
+### Top contributors:
+
+<a href="https://github.com/aranu29/portfolio-website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=aranu29/portfolio-website" alt="contrib.rocks image" />
+</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 📧 Contact
 
-Your Name - [@yourusername](https://twitter.com/yourusername) - your.email@example.com
+- [![GitHub][github-shield]][github-url]
+- [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Project Link: [https://github.com/yourusername/portfolio-website](https://github.com/yourusername/portfolio-website)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments
 
 - [React Documentation](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Unsplash](https://unsplash.com/) for stock photos
-- [Lucide](https://lucide.dev/) for icons
+- [Bootstrap CSS](https://getbootstrap.com/)
+- [98.css](https://jdan.github.io/98.css/#intro) for windows 98 styling
 
-## 📊 Performance
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- **Lighthouse Score:** 95+ on all metrics
-- **Page Load Time:** < 2 seconds
-- **Mobile Friendly:** 100% responsive
-- **SEO Score:** 95+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
 ⭐ Star this repo if you found it helpful!
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[license-shield]: https://img.shields.io/github/license/aranu29/odin-recipes.svg?style=for-the-badge
+[license-url]: https://github.com/aranu29/odin-recipes/blob/master/LICENSE.txt
+[linkedin-shield]: https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff
+[linkedin-url]: https://www.linkedin.com/in/anuoluwa-akibu1/
+[github-shield]: https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white
+[github-url]: https://github.com/aranu29/odin-recipes
+[HTML]: https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white
+[HTML-url]: https://html.com/
+[CSS]: https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff
+[CSS-url]: https://html.com
+[BOOTSTRAP]: https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff
+[BOOTSTRAP-url]: https://getbootstrap.com/
+[JAVASCRIPT]: https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000
+[JAVASCRIPT-url]: https://www.javascript.com/
