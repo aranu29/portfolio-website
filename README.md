@@ -35,10 +35,9 @@ Welcome to my ongoing digital playground - a collection of personal software pro
 Work in progress - more projects and updates coming soon!
 
 ### 🚀 Latest Version
-Access the website below!
 [![Latest Release](https://img.shields.io/github/v/release/aranu29/portfolio-website?style=for-the-badge)](../../releases/latest)
 
-[📋 View All Releases](../../releases) | [🔔 Watch for Updates](../../subscription)
+- [📋 View All Releases](../../releases) | [🔔 Watch for Updates](../../subscription)
 
 ### 🛠️ Built With
 
