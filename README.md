@@ -7,8 +7,8 @@
         <li>
             <a href="#about-the-project">About The Project</a>
             <ul>
+                <li><a href="#latest-version">Live Website</a></li>
                 <li><a href="#built-with">Built With</a></li>
-                <li><a href="#live-demo">Live Demo</a></li>
             </ul>
         </li>
         <li>
