@@ -143,6 +143,8 @@ See the [open issues](https://github.com/aranu29/odin-recipes/issues) for a full
 - [React Documentation](https://reactjs.org/)
 - [Bootstrap CSS](https://getbootstrap.com/)
 - [98.css](https://jdan.github.io/98.css/#intro)
+- Inspired by angieblah (https://www.youtube.com/watch?v=62NJbICVWkQ)
+
 
 <p align="right">(<a href="#readme-top">⬆️ Back to top</a>)</p>
 
