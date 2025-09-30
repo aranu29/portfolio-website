@@ -107,7 +107,7 @@ Coming Soon
 
 ## Roadmap
 
-See the [open issues](https://github.com/aranu29/odin-recipes/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/aranu29/portfolio-website/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">⬆️ Back to top</a>)</p>
 
@@ -161,12 +161,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[license-shield]: https://img.shields.io/github/license/aranu29/odin-recipes.svg?style=for-the-badge
-[license-url]: https://github.com/aranu29/odin-recipes/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/aranu29/portfolio-website.svg?style=for-the-badge
+[license-url]: https://github.com/aranu29/portfolio-website/blob/master/LICENSE.txt
 [linkedin-shield]: https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff
 [linkedin-url]: https://www.linkedin.com/in/anuoluwa-akibu1/
 [github-shield]: https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white
-[github-url]: https://github.com/aranu29/odin-recipes
+[github-url]: https://github.com/aranu29/portfolio-website
 [HTML]: https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white
 [HTML-url]: https://html.com/
 [CSS]: https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff
